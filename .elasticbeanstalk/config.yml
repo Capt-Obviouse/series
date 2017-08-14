@@ -1,0 +1,19 @@
+branch-defaults:
+  develop:
+    environment: SeriesStagingEnv-env
+environment-defaults:
+  SeriesStagingEnv-env:
+    branch: null
+    repository: null
+global:
+  application_name: Series-Staging-Env
+  default_ec2_keyname: SeriesKey
+  default_platform: arn:aws:elasticbeanstalk:us-east-2::platform/Puma with Ruby 2.3
+    running on 64bit Amazon Linux/2.4.2
+  default_region: us-east-2
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: series
+  sc: git
+  workspace_type: Application
