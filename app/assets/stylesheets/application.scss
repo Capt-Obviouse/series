@@ -1,0 +1,24 @@
+@import "bootstrap";
+@import "*";
+@import "**/*";
+
+.red {
+	background-color: #DA291c;
+}
+
+.tan {
+	background-color: #c3c7bf;
+}
+
+.white {
+	background-color: #dbe2e9;
+}
+
+.gray {
+	background-color: #2e2e2e;
+}
+
+a:link {color:#DA291c;}      /* unvisited link */
+a:visited {color:#DA291c;}  /* visited link */
+a:hover {color:#004b8d;}  /* mouse over link */
+a:active {color:#DA291c;}  /* selected link */
