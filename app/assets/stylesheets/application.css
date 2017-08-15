@@ -93,6 +93,10 @@ li:last-child {
 	text-align: right;
 }
 
+.whitetext {
+	color: white;
+}
+
 /************** COLORS **********************/
 
 .red {
