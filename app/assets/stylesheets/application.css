@@ -57,10 +57,13 @@ li:last-child {
 
 .conthrax {
 	font-family: conthrax;
+	letter-spacing: 2px;
 }
 .conthraxlarge {
 	font-family: conthrax;
 	font-size: x-large;
+	letter-spacing: 4px;
+	line-height: 150%;
 }
 .text-center {
 	vertical-align: middle;
