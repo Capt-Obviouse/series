@@ -1,23 +1,81 @@
 @import "bootstrap";
 @import "*";
 @import "**/*";
+@font-face {
+	font-family: 'conthrax';
+	src: url('/assets/conthrax-sb')
+}
+
+body {
+	background-color: #dbe2e9;
+	font-family: conthrax;
+}
 
 .red {
 	background-color: #DA291c;
 }
-
+.red-font {
+	color: #DA291c;
+}
 .tan {
 	background-color: #c3c7bf;
+}
+.tan-font {
+	bcolor: #c3c7bf;
 }
 
 .white {
 	background-color: #dbe2e9;
 }
+.white-font {
+	color: #dbe2e9;
+}
 
 .gray {
 	background-color: #2e2e2e;
 }
+.gray-font {
+	color: #2e2e2e;
+}
 
+.navbar-dark .navbar-nav .nav-link {
+	color: #DA291C;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-right: 1px solid black;
+}
+
+.navbar-dark .nav-item.active .nav-link, 
+.navbar-dark .nav-item:hover .nav-link {
+	color: blue;
+	background-color: #dbe2e9;
+
+}
+.italic {
+	font-style: italic;
+}
+
+h1.series {
+	font-size: 350%;
+}
+.center {
+	text-align: center;
+}
+.bulk-text {
+	margin: 50px;
+	margin-right: 100px;
+	margin-left: 100px;
+
+}
+
+.footer-nav {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
 a:link {color:#DA291c;}      /* unvisited link */
 a:visited {color:#DA291c;}  /* visited link */
 a:hover {color:#004b8d;}  /* mouse over link */

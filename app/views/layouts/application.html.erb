@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Series2</title>
     <%= csrf_meta_tags %>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
 <!-- NavBar --> 
@@ -23,16 +21,16 @@
 				<div class="collapse navbar-collapse" id="mainNav">
 					<ul class="navbar-nav mr-auto ml-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="#">Home</a>
+							<a class="nav-link" href="#">HOME</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">SERIES 22</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">About</a>
+							<a class="nav-link" href="#">ABOUT</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Contact Us</a>
+							<a class="nav-link" href="#">CONTACT US</a>
 						</li>
 					</ul>
 				</div>
@@ -41,10 +39,38 @@
 
 <!-- End Nav Bar -->
 
-		<div class='container'>	
-			<%= yield %>
-		</div>
+		<div class='container-fluid white'>	
 
+			<%= yield %>
+		
+			<div class='row gray text-white'>
+				<div class='col-sm-4 center'>
+					<h4>Navigation</h4>
+					<ul class='footer-nav'>
+						<li class='footer-nav'><a class='active' href='#'>Home</a></li>
+						<li class='footer-nav'><a href='#'>SERIES 22</a></li>
+						<li class='footer-nav'><a href='#'>About</a></li>
+						<li class='footer-nav'><a href='#'>Contact Us</a></li>
+						<li class='footer-nav'><a href='#'>Partners</a></li>
+						<li class='footer-nav'><a href='#'>Sitemap</a></li>
+					</ul>
+				</div>
+				<div class='col-sm-4 center'>
+					<%= image_tag('logo.png', :height=>'100') %>
+				</div>
+				<div class='col-sm-4 center'>
+					<h4>Partners</h4>
+					<ul class='footer-nav'>
+						<li class='footer-nav'><a class='active' href='#'>BRCC</a></li>
+						<li class='footer-nav'><a href='#'>Hidden Wounds</a></li>
+						<li class='footer-nav'><a href='#'>Mission 22</a></li>
+						<li class='footer-nav'><a href='#'>Active Heroes</a></li>
+						<li class='footer-nav'><a href='#'>Nine Line Apparel</a></li>
+						<li class='footer-nav'><a href='#'>Hope for the Warriors</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
 
 
