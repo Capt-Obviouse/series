@@ -10,7 +10,10 @@
 }
 
 body {
-	background-color: #000;
+	background-image: image-url('bgrepeat.png');
+	background-repeat: repeat;
+	background-size: 100px;
+	background-color: #2e2e2e;
 	font-family: conthrax;
 }
 
