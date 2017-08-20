@@ -1,9 +1,12 @@
 @import "bootstrap";
+
 @import "*";
+
 @import "**/*";
+
 @font-face {
 	font-family: 'conthrax';
-	src: url('/assets/conthrax-sb.ttf')
+	src:font-url('/fonts/conthrax.ttf') format('truetype');
 }
 
 body {
