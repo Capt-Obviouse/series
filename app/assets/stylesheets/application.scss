@@ -90,6 +90,12 @@ h1.series {
 
 }
 
+.bulk-padding {
+	
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
 .footer-nav {
 	list-style-type: none;
 	margin: 0px;
@@ -103,6 +109,10 @@ h1.series {
 
 	padding: 0px;
 	margin: 0px;
+}
+.woodbg {
+	
+	background-image: image-url('woodbg.jpg');
 }
 a:link {color:#DA291c;}      /* unvisited link */
 a:visited {color:#DA291c;}  /* visited link */
