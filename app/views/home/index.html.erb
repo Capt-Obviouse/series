@@ -50,12 +50,136 @@ To fully understand how SERIES came to be we have to take you back. Back to a Su
 		</div>
 	</div>
 </div>
+<!--  How it Works -->
 
 <div class='container-fluid gray no-space white-font woodbg'>
 	<div class='container'>
 		<div class='row'>
 			<div class='col-sm-12'>
 <%= image_tag('howitworks.png') %>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!-- Support Series 22 -->
+
+<div class='container-fluid gray no-space white-font dark-white'>
+	<div class='container'>
+		<div class='row bulk-padding'>
+			<div class='col-sm-12'>
+
+				<div id='product-component-b4eda83a8fa'></div>
+					<script type="text/javascript">
+					/*<![CDATA[*/
+
+					(function () {
+					  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+					  if (window.ShopifyBuy) {
+					    if (window.ShopifyBuy.UI) {
+					      ShopifyBuyInit();
+					    } else {
+					      loadScript();
+					    }
+					  } else {
+					    loadScript();
+					  }
+
+					  function loadScript() {
+					    var script = document.createElement('script');
+					    script.async = true;
+					    script.src = scriptURL;
+					    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+					    script.onload = ShopifyBuyInit;
+					  }
+
+					  function ShopifyBuyInit() {
+					    var client = ShopifyBuy.buildClient({
+					      domain: 'series22.myshopify.com',
+					      apiKey: 'dac21f19e3dbb52e6b15c6cd24554732',
+					      appId: '6',
+					    });
+
+					    ShopifyBuy.UI.onReady(client).then(function (ui) {
+					      ui.createComponent('product', {
+					        id: [8818884613],
+					        node: document.getElementById('product-component-b4eda83a8fa'),
+					        moneyFormat: '%24%7B%7Bamount%7D%7D',
+					        options: {
+					  "product": {
+					    "variantId": "all",
+					    "width": "240px",
+					    "contents": {
+					      "imgWithCarousel": false,
+					      "variantTitle": false,
+					      "description": false,
+					      "buttonWithQuantity": false,
+					      "quantity": false
+					    },
+					    "styles": {
+					      "product": {
+					        "@media (min-width: 601px)": {
+					          "max-width": "100%",
+					          "margin-left": "0",
+					          "margin-bottom": "50px"
+					        }
+					      },
+					      "compareAt": {
+					        "font-size": "12px"
+					      }
+					    }
+					  },
+					  "cart": {
+					    "contents": {
+					      "button": true
+					    },
+					    "styles": {
+					      "footer": {
+					        "background-color": "#ffffff"
+					      }
+					    }
+					  },
+					  "modalProduct": {
+					    "contents": {
+					      "img": false,
+					      "imgWithCarousel": true,
+					      "variantTitle": false,
+					      "buttonWithQuantity": true,
+					      "button": false,
+					      "quantity": false
+					    },
+					    "styles": {
+					      "product": {
+					        "@media (min-width: 601px)": {
+					          "max-width": "100%",
+					          "margin-left": "0px",
+					          "margin-bottom": "0px"
+					        }
+					      }
+					    }
+					  },
+					  "productSet": {
+					    "styles": {
+					      "products": {
+					        "@media (min-width: 601px)": {
+					          "margin-left": "-20px"
+					        }
+					      }
+					    }
+					  }
+					}
+					      });
+					    });
+					  }
+					})();
+					/*]]>*/
+					</script>
+
+			</div>
+		</div>
+		<div class='row text-left'>
+			<div class='col-sm-12 no-space text-right'>
 			</div>
 		</div>
 		<div class='row text-left'>
@@ -65,6 +189,9 @@ To fully understand how SERIES came to be we have to take you back. Back to a Su
 		</div>
 	</div>
 </div>
+
+<!-- Contact -->
+
 <div class='container-fluid black'>
 	<div class='col-sm-12 height-spacer'>
 	</div>
