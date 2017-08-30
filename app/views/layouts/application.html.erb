@@ -21,16 +21,16 @@
 				<div class="collapse navbar-collapse" id="mainNav">
 					<ul class="navbar-nav mr-auto ml-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="#">HOME</a>
+							<%= link_to "HOME", root_path, :class=> "nav-link" %>
+						</li>
+						<li class="nav-item ">
+							<%= link_to "SERIES 22", products_index_path, :class=> "nav-link" %> 
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">SERIES 22</a>
+							<a class="nav-link" href="/home/index/#about-page">ABOUT</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">ABOUT</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">CONTACT US</a>
+							<a class="nav-link" href="/home/index/#contact-us">CONTACT US</a>
 						</li>
 					</ul>
 				</div>
@@ -40,9 +40,8 @@
 
 <!-- End Nav Bar -->
 
-	
-		</div>
 			<%= yield %>
+		</div>
 
 		<div class='container-fluid black' style='margin-top: 30px;'>
 			<div class='container'>

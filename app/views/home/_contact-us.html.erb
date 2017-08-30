@@ -1,0 +1,34 @@
+<p class='bulk-text'>
+							<h2>
+								Send a Message
+							</h2>
+						</p>
+
+
+<%= form_for @contact_form, :url => { :action => 'submit_form', :anchor => "contact-us"}, html: { class: 'user-form' } do |f| %>
+	<div>
+		<%= f.label :name %><br>
+		<%= f.text_field :name %>
+	</div>
+
+	<div>
+		<%= f.label :email %><br>
+		<%= f.email_field :email %>
+	</div>
+
+
+
+	<div>
+		<%= f.label :message %><br>
+		<%= f.text_area :message %>
+	</div>
+	
+	<div class="honeypot">
+		<%= f.label :telephone %><br>
+		<%= f.telephone_field :telephone %>
+	</div>
+
+	<div class="action">
+		<%= f.submit %>
+	</div>
+<% end %>

@@ -13,3 +13,20 @@
 div.row {
 	overflow: hidden;
 }
+
+.user-form {
+	> div {
+		display: block;
+		margin: 1em 0;
+	}
+}
+
+.field_with_errors {
+	input, textarea {
+		border: 1px solid #ef4f4f;
+	}
+}
+
+.honeypot {
+	display: none !important;
+}

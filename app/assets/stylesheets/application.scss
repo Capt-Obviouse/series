@@ -16,7 +16,9 @@ body {
 	background-color: #000;
 	font-family: conthrax;
 }
-
+.pure-white {
+	background-color: #fff;
+}
 .red {
 	background-color: #DA291c;
 }
@@ -89,7 +91,6 @@ h1.series {
 	margin-bottom: 50px;
 
 }
-
 .bulk-padding {
 	
 	padding-top: 50px;
@@ -114,7 +115,7 @@ h1.series {
 	
 	background-image: image-url('woodbg.jpg');
 }
-a:link {color:#DA291c;}      /* unvisited link */
-a:visited {color:#DA291c;}  /* visited link */
-a:hover {color:#004b8d;}  /* mouse over link */
-a:active {color:#DA291c;}  /* selected link */
+a:link {color:#DA291c; text-decoration: none;}      /* unvisited link */
+a:visited {color:#DA291c;  text-decoration: none;}  /* visited link */
+a:hover {color:#004b8d;  text-decoration: none;}  /* mouse over link */
+a:active {color:#DA291c;  text-decoration: none;}  /* selected link */
