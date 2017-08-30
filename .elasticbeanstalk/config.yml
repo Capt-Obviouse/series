@@ -1,6 +1,8 @@
 branch-defaults:
   master:
     environment: StageSeries-env
+  stage:
+    environment: prod-env
 environment-defaults:
   StageSeries-env:
     branch: null
@@ -14,6 +16,6 @@ global:
   instance_profile: null
   platform_name: null
   platform_version: null
-  profile: series
+  profile: prod
   sc: git
   workspace_type: Application
