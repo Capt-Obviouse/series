@@ -9,40 +9,38 @@
   </head>
   <body>
 <!-- NavBar --> 
-
-		<nav class="navbar navbar-expand-lg navbar-dark black">
-			<div class='container'>
-				<a class="navbar-brand" href="#">
-					<%= image_tag('logo.png', :height=>'100') %>
-				</a>
-				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="mainNav">
-					<ul class="navbar-nav mr-auto ml-auto">
-						<li class="nav-item">
-							<%= link_to "HOME", root_path, :class=> "nav-link" %>
-						</li>
-						<li class="nav-item ">
-							<%= link_to "SERIES 22", products_index_path, :class=> "nav-link" %> 
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/home/index/#about-page">ABOUT</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/home/index/#contact-us">CONTACT US</a>
-						</li>
-					</ul>
-				</div>
+		
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark" id='navigation' style='height: 100px;'>
+		<div class='container-fluid'>
+			<a class="navbar-brand" href="#">
+				<%= image_tag('seriesletters.png') %> 
+			</a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse"  id="mainNav">
+				<ul class="navbar-nav mr-auto ml-auto" style='right: 0px; position: absolute;'>
+					<li class="nav-item">
+						<%= link_to "Home", root_path, :class=> "nav-link" %>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/home/index/#products">Products</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/home/index/#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/home/index/#contactus">Contact Us</a>
+					</li>
+				</ul>
 			</div>
-		</nav>
-		<div class='container-fluid black'>
+		</div>
+	</nav>
 
 <!-- End Nav Bar -->
 
 			<%= yield %>
-		</div>
-
+	
 		<div class='container-fluid black' style='margin-top: 30px;'>
 			<div class='container'>
 				<div class='row text-white'>

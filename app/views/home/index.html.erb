@@ -1,133 +1,16 @@
-		
-<div class='container-fluid hero'>
-	<div class='container' style='padding-top: 50px; padding-bototm: 0px;'>
-	<a href='/products/index'>
-		<div class='row' id='product-component-d30635afa70'>
-			<div class='col-sm-6'>
-				<h1 class='series italic center white-font'>
-					SERIES <font class='red-font italic'>22</font>
-				</h1>
-				<p class='center white-font'>	
-				  In 2013, the United States Department of Veterans Affairs released a study that covered suicides from 1999 to 2010, which showed that roughly 22 veterans were dying by suicide per day, or one ever 65 minutes. Help us fight, one veteran is to many.
-				</p> 
-				<p class='center'>
-					<%= image_tag('jointhefight.png'); %>
-				</p>
-			</div>
-			<div class='col-sm-6 center'>
-			<%= image_tag('sippy.png', :height=>'500') %>
-			</div>
-		</div>
-		</a> 
-		<div class='row'>
-			<a name='about-page'>
-			<div class='col-sm-12 text-right'>
-				<%= link_to image_tag('about.png', width: '50%'), '#about-page' %> </a>
-			</div>
-			</a>
-		</div>
-	</div>
-	</div>
-</div>
-<div class='container-fluid red'>
-	<div class='col-sm-12 height-spacer'>
-	</div>
-</div>
-<div class='container-fluid white no-space'>
-	<div class='container'>
-		<div class='row'>
-			<div class='col-sm-12'>
-				<p class='bulk-padding'>
 
-
-<%= image_tag('fillerimage2.jpg', width: '20%', :style => " float: left; padding: 15px;") %> To fully understand how SERIES came to be we have to take you back. Back to a Sunday afternoon on Camp Pendleton in a quiet barracks room where one Marine would take his own life.   Back to the cries of our brother as he jumped to his death while we helplessly watched. Back to a silent aircraft hangar where over 100 Marines stood side by side but still one short. <%= image_tag('fillerimage1.jpg', width: '20%', :style => "float: right; padding: 15px;") %>Back to a phone call that makes your hair stand on end because another friend was in the hospital and no one knew if he would live because he had lost so much blood at his own hands. We are a company of veterans who are drawing a line in the sand. While SERIES is a for profit company, we are also for change and it's in this that we are heavily invested. We believe that our service to our brothers does not end with our contract and so we carry our motto of Semper Fidelis to SERIES. 
-
-
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!--  How it Works -->
-
-<div class='container-fluid gray no-space white-font woodbg'>
-	<div class='container'>
-		<div class='row'>
-			<div class='col-sm-12'>
-<%= image_tag('howitworks.png') %>
-			</div>
-		</div>
-
-	</div>
-</div>
-
-<!-- Support Series 22 -->
-
-<div class='container-fluid gray no-space white-font dark-white'>
-	<div class='container'>
-		<div class='row bulk-padding'>
-			<div class='col-sm-12'>
-
-				
-					
-
-			</div>
-		</div>
-		<div class='row text-left'>
-			<div class='col-sm-12 no-space text-right'>
-			</div>
-		</div>
-		<div class='row text-left'>
-		
-		
-			<div class='col-sm-12 no-space text-right'>
-
-				<a href="#contact-us"><%= image_tag('contact.png', width: '50%') %></a>
-			</div>
-		
+<div class='row flex-row' id='home'>
+	<div style='margin: auto;'> 
+		<div class='main-text'>
+			One <font color='red'>veteran</font> is too many
 		</div>
 	</div>
 </div>
 
-<!-- Contact -->
-
-<div class='container-fluid black'>
-<a name='contact-us'>
-	<div class='col-sm-12 height-spacer'>
-	</div>
-</div>
-<div class='container-fluid dark-white'>
-	<div class='container'>
-		<div class='row'>
-			<div class='container'>
-				<div class='row'>
-					<div class='col-sm-6'>
-
-					<%= render 'contact-us' %>
-					
-					</div>
-					<div class='col-sm-6 bulk-text center'>
-						<h2>
-							Spread the Message
-						</h2>
-						<p>
-							<%= image_tag('twitterlogo.png', width: '30%', margin: '5px') %>
-							<%= image_tag('instagramlogo.jpg', width: '30%', margin: '5px') %>
-							<%= image_tag('fblogo.png', width: '20%',  margin: '5px') %>
-						</p>
-						<p>
-							#SERIES-22
-						</p>
-						<p>
-							
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div id='product-component-b4eda83a8fa' style='display: none;''></div>
+<div class='row flex-row container-fluid offwhite' id='services'>
+	<div class='pasnel-body flex-grow'> 
+		<a name='products'></a>
+		<div id='product-component-b4eda83a8fa' style='margin: auto;'></div>
 					<script type="text/javascript">
 					/*<![CDATA[*/
 
@@ -189,20 +72,20 @@
 					  },
 					  "cart": {
 					    "contents": {
-					      "button": false
+					      "button": true
 					    },
 					    "styles": {
 					      "footer": {
-					        "background-color": "#ffffff"
+					        "background-color": "#fff"
 					      }
 					    }
 					  },
 					  "modalProduct": {
 					    "contents": {
-					      "img": false,
-					      "imgWithCarousel": false,
+					      "img": true,
+					      "imgWithCarousel": true,
 					      "variantTitle": false,
-					      "buttonWithQuantity": false,
+					      "buttonWithQuantity": true,
 					      "button": false,
 					      "quantity": false
 					    },
@@ -232,3 +115,62 @@
 					})();
 					/*]]>*/
 					</script>
+	</div>
+</div>
+
+<div class='container-fluid'>
+	<div class='row'>
+		<div class='col-sm-12' style='height: 300px;'>
+			Filler Space
+		</div>
+	</div>
+</div>
+
+<div class='row flex-row container-fluid offwhite' id='services'>
+		<a name='about'></a>
+	<div class='pasnel-body flex-grow' style='margin-top: 120px;'> 
+
+		<p>
+			<%= image_tag('fillerimage2.jpg', width: '20%', :style => " float: left; padding: 15px;") %> To fully understand how SERIES came to be we have to take you back. Back to a Sunday afternoon on Camp Pendleton in a quiet barracks room where one Marine would take his own life.   Back to the cries of our brother as he jumped to his death while we helplessly watched. Back to a silent aircraft hangar where over 100 Marines stood side by side but still one short. <%= image_tag('fillerimage1.jpg', width: '20%', :style => "float: right; padding: 15px;") %>Back to a phone call that makes your hair stand on end because another friend was in the hospital and no one knew if he would live because he had lost so much blood at his own hands. We are a company of veterans who are drawing a line in the sand. While SERIES is a for profit company, we are also for change and it's in this that we are heavily invested. We believe that our service to our brothers does not end with our contract and so we carry our motto of Semper Fidelis to SERIES. 
+		</p>
+	</div>
+</div>
+
+<div class='container-fluid'>
+	<div class='row'>
+		<div class='col-sm-12' style='height: 300px;'>
+			Filler Space
+		</div>
+	</div>
+</div>
+
+<div class='row flex-row container-fluid offwhite' id='services'>
+	<a name='contactus'></a>
+	<div class='pasnel-body flex-grow' style='margin: auto;'>
+		<div class='row'>
+			<div class='col-sm-6'>
+
+			<%= render 'contact-us' %>
+			
+			</div>
+			<div class='col-sm-6 bulk-text center'>
+				<h2>
+					Spread the Message
+				</h2>
+				<p>
+					<%= image_tag('twitterlogo.png', width: '30%', margin: '5px') %>
+					<%= image_tag('instagramlogo.jpg', width: '30%', margin: '5px') %>
+					<%= image_tag('fblogo.png', width: '20%',  margin: '5px') %>
+				</p>
+				<p>
+					#SERIES-22
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Contact -->
+
+
