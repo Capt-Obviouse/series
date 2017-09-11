@@ -85,6 +85,7 @@ h1.series {
 }
 .center {
 	text-align: center;
+	margin: auto;
 }
 .bulk-text {
 	margin-top: 50px;
@@ -156,4 +157,8 @@ html,body {
 
 .offwhite {
 	background-color: #e4e4e4;
+}
+
+.past-home {
+	background-color: black !important;
 }

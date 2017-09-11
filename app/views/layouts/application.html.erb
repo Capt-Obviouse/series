@@ -40,6 +40,8 @@
 <!-- End Nav Bar -->
 
 			<%= yield %>
+
+<!--
 	
 		<div class='container-fluid black' style='margin-top: 30px;'>
 			<div class='container'>
@@ -73,17 +75,32 @@
 			</div>
 		</div>
 
+-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 
+	<script>
 
+		var mainbottom = $('#home').offset().top + $('#home').height();
+		console.log('mainbottom');
+		mainbottom = mainbottom-150;
+		console.log(mainbottom);
+		// on scroll, 
+		$(window).on('scroll',function(){
+			console.log(mainbottom);
+		    // we round here to reduce a little workload
+		    
+		    stop = Math.round($(window).scrollTop());
+		    if (stop > mainbottom) {
+		        $('#navigation').addClass('past-home');
+		    } else {
+		        $('#navigation').removeClass('past-home');
+		        
+		   }
 
-
-
-
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+		});
+	</script>
 
   </body>
 </html>

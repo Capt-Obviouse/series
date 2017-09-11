@@ -1,5 +1,5 @@
 
-<div class='row flex-row' id='home'>
+<div class='row container-fluid' id='home'>
 	<div style='margin: auto;'> 
 		<div class='main-text'>
 			One <font color='red'>veteran</font> is too many
@@ -7,114 +7,114 @@
 	</div>
 </div>
 
-<div class='row flex-row container-fluid offwhite' id='services'>
-	<div class='pasnel-body flex-grow'> 
-		<a name='products'></a>
-		<div id='product-component-b4eda83a8fa' style='margin: auto;'></div>
-					<script type="text/javascript">
-					/*<![CDATA[*/
+<div class='row container-fluid offwhite' id='products'>
+	<div class='row center'>
+			<a name='products'></a>
+			<div id='product-component-b4eda83a8fa' class='center'></div>
+						<script type="text/javascript">
+						/*<![CDATA[*/
 
-					(function () {
-					  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-					  if (window.ShopifyBuy) {
-					    if (window.ShopifyBuy.UI) {
-					      ShopifyBuyInit();
-					    } else {
-					      loadScript();
-					    }
-					  } else {
-					    loadScript();
-					  }
+						(function () {
+						  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+						  if (window.ShopifyBuy) {
+						    if (window.ShopifyBuy.UI) {
+						      ShopifyBuyInit();
+						    } else {
+						      loadScript();
+						    }
+						  } else {
+						    loadScript();
+						  }
 
-					  function loadScript() {
-					    var script = document.createElement('script');
-					    script.async = true;
-					    script.src = scriptURL;
-					    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-					    script.onload = ShopifyBuyInit;
-					  }
+						  function loadScript() {
+						    var script = document.createElement('script');
+						    script.async = true;
+						    script.src = scriptURL;
+						    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+						    script.onload = ShopifyBuyInit;
+						  }
 
-					  function ShopifyBuyInit() {
-					    var client = ShopifyBuy.buildClient({
-					      domain: 'series22.myshopify.com',
-					      apiKey: 'dac21f19e3dbb52e6b15c6cd24554732',
-					      appId: '6',
-					    });
+						  function ShopifyBuyInit() {
+						    var client = ShopifyBuy.buildClient({
+						      domain: 'series22.myshopify.com',
+						      apiKey: 'dac21f19e3dbb52e6b15c6cd24554732',
+						      appId: '6',
+						    });
 
-					    ShopifyBuy.UI.onReady(client).then(function (ui) {
-					      ui.createComponent('product', {
-					        id: [8818884613],
-					        node: document.getElementById('product-component-b4eda83a8fa'),
-					        moneyFormat: '%24%7B%7Bamount%7D%7D',
-					        options: {
-					  "product": {
-					    "variantId": "all",
-					    "width": "240px",
-					    "contents": {
-					      "imgWithCarousel": false,
-					      "variantTitle": false,
-					      "description": false,
-					      "buttonWithQuantity": false,
-					      "quantity": false
-					    },
-					    "styles": {
-					      "product": {
-					        "@media (min-width: 601px)": {
-					          "max-width": "100%",
-					          "margin-left": "0",
-					          "margin-bottom": "50px"
-					        }
-					      },
-					      "compareAt": {
-					        "font-size": "12px"
-					      }
-					    }
-					  },
-					  "cart": {
-					    "contents": {
-					      "button": true
-					    },
-					    "styles": {
-					      "footer": {
-					        "background-color": "#fff"
-					      }
-					    }
-					  },
-					  "modalProduct": {
-					    "contents": {
-					      "img": true,
-					      "imgWithCarousel": true,
-					      "variantTitle": false,
-					      "buttonWithQuantity": true,
-					      "button": false,
-					      "quantity": false
-					    },
-					    "styles": {
-					      "product": {
-					        "@media (min-width: 601px)": {
-					          "max-width": "100%",
-					          "margin-left": "0px",
-					          "margin-bottom": "0px"
-					        }
-					      }
-					    }
-					  },
-					  "productSet": {
-					    "styles": {
-					      "products": {
-					        "@media (min-width: 601px)": {
-					          "margin-left": "-20px"
-					        }
-					      }
-					    }
-					  }
-					}
-					      });
-					    });
-					  }
-					})();
-					/*]]>*/
-					</script>
+						    ShopifyBuy.UI.onReady(client).then(function (ui) {
+						      ui.createComponent('product', {
+						        id: [8818884613],
+						        node: document.getElementById('product-component-b4eda83a8fa'),
+						        moneyFormat: '%24%7B%7Bamount%7D%7D',
+						        options: {
+						  "product": {
+						    "variantId": "all",
+						    "width": "240px",
+						    "contents": {
+						      "imgWithCarousel": false,
+						      "variantTitle": false,
+						      "description": false,
+						      "buttonWithQuantity": false,
+						      "quantity": false
+						    },
+						    "styles": {
+						      "product": {
+						        "@media (min-width: 601px)": {
+						          "max-width": "100%",
+						          "margin-left": "0",
+						          "margin-bottom": "50px"
+						        }
+						      },
+						      "compareAt": {
+						        "font-size": "12px"
+						      }
+						    }
+						  },
+						  "cart": {
+						    "contents": {
+						      "button": true
+						    },
+						    "styles": {
+						      "footer": {
+						        "background-color": "#fff"
+						      }
+						    }
+						  },
+						  "modalProduct": {
+						    "contents": {
+						      "img": true,
+						      "imgWithCarousel": true,
+						      "variantTitle": false,
+						      "buttonWithQuantity": true,
+						      "button": false,
+						      "quantity": false
+						    },
+						    "styles": {
+						      "product": {
+						        "@media (min-width: 601px)": {
+						          "max-width": "100%",
+						          "margin-left": "0px",
+						          "margin-bottom": "0px"
+						        }
+						      }
+						    }
+						  },
+						  "productSet": {
+						    "styles": {
+						      "products": {
+						        "@media (min-width: 601px)": {
+						          "margin-left": "-20px"
+						        }
+						      }
+						    }
+						  }
+						}
+						      });
+						    });
+						  }
+						})();
+						/*]]>*/
+						</script>
 	</div>
 </div>
 
@@ -126,13 +126,14 @@
 	</div>
 </div>
 
-<div class='row flex-row container-fluid offwhite' id='services'>
+<div class='row container-fluid offwhite' id='about'>
+	<div class='row'>
 		<a name='about'></a>
-	<div class='pasnel-body flex-grow' style='margin-top: 120px;'> 
-
-		<p>
-			<%= image_tag('fillerimage2.jpg', width: '20%', :style => " float: left; padding: 15px;") %> To fully understand how SERIES came to be we have to take you back. Back to a Sunday afternoon on Camp Pendleton in a quiet barracks room where one Marine would take his own life.   Back to the cries of our brother as he jumped to his death while we helplessly watched. Back to a silent aircraft hangar where over 100 Marines stood side by side but still one short. <%= image_tag('fillerimage1.jpg', width: '20%', :style => "float: right; padding: 15px;") %>Back to a phone call that makes your hair stand on end because another friend was in the hospital and no one knew if he would live because he had lost so much blood at his own hands. We are a company of veterans who are drawing a line in the sand. While SERIES is a for profit company, we are also for change and it's in this that we are heavily invested. We believe that our service to our brothers does not end with our contract and so we carry our motto of Semper Fidelis to SERIES. 
-		</p>
+		<div class='col-sm-12' style='margin-top: 120px;'> 
+			<p>
+				<%= image_tag('fillerimage2.jpg', width: '20%', :style => " float: left; padding: 15px;") %> To fully understand how SERIES came to be we have to take you back. Back to a Sunday afternoon on Camp Pendleton in a quiet barracks room where one Marine would take his own life.   Back to the cries of our brother as he jumped to his death while we helplessly watched. Back to a silent aircraft hangar where over 100 Marines stood side by side but still one short. <%= image_tag('fillerimage1.jpg', width: '20%', :style => "float: right; padding: 15px;") %>Back to a phone call that makes your hair stand on end because another friend was in the hospital and no one knew if he would live because he had lost so much blood at his own hands. We are a company of veterans who are drawing a line in the sand. While SERIES is a for profit company, we are also for change and it's in this that we are heavily invested. We believe that our service to our brothers does not end with our contract and so we carry our motto of Semper Fidelis to SERIES. 
+			</p>
+		</div>
 	</div>
 </div>
 
@@ -144,9 +145,10 @@
 	</div>
 </div>
 
-<div class='row flex-row container-fluid offwhite' id='services'>
+<div class='row container-fluid offwhite' id='contactus'>
+<div class='row'>
 	<a name='contactus'></a>
-	<div class='pasnel-body flex-grow' style='margin: auto;'>
+	<div class='col-sm-12' style='margin: auto;'>
 		<div class='row'>
 			<div class='col-sm-6'>
 
@@ -165,6 +167,7 @@
 				<p>
 					#SERIES-22
 				</p>
+			</div>
 			</div>
 		</div>
 	</div>
