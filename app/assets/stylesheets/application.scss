@@ -162,3 +162,19 @@ html,body {
 .past-home {
 	background-color: black !important;
 }
+
+.center {
+	margin: auto;
+	text-align: center;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -130px;
+    visibility: hidden;
+}
+
+.darkbg {
+	color: #fefefe;
+}

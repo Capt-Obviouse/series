@@ -41,9 +41,9 @@
 
 			<%= yield %>
 
-<!--
+
 	
-		<div class='container-fluid black' style='margin-top: 30px;'>
+		<div class='container-fluid darkbg' style='margin-top: 30px;'>
 			<div class='container'>
 				<div class='row text-white'>
 					<div class='col-sm-4 center'>
@@ -58,7 +58,7 @@
 						</ul>
 					</div>
 					<div class='col-sm-4 center'>
-						<%= image_tag('logo.png', :height=>'100') %>
+						
 					</div>
 					<div class='col-sm-4 center'>
 						<h4>Partners</h4>
@@ -75,7 +75,6 @@
 			</div>
 		</div>
 
--->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
@@ -86,11 +85,9 @@
 
 		mainbottom = mainbottom * (70 / 100);
 
-		console.log(mainbottom);
-
 		// on scroll, 
 		$(window).on('scroll',function(){
-			console.log(mainbottom);
+	
 		    // we round here to reduce a little workload
 		    
 		    stop = Math.round($(window).scrollTop());
