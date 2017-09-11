@@ -83,9 +83,11 @@
 	<script>
 
 		var mainbottom = $('#home').offset().top + $('#home').height();
-		console.log('mainbottom');
-		mainbottom = mainbottom-150;
+
+		mainbottom = mainbottom * (70 / 100);
+
 		console.log(mainbottom);
+
 		// on scroll, 
 		$(window).on('scroll',function(){
 			console.log(mainbottom);
@@ -94,8 +96,10 @@
 		    stop = Math.round($(window).scrollTop());
 		    if (stop > mainbottom) {
 		        $('#navigation').addClass('past-home');
+		        $('#mainNav').addClass('past-home');
 		    } else {
 		        $('#navigation').removeClass('past-home');
+		        $('#mainNav').addClass('past-home');
 		        
 		   }
 
