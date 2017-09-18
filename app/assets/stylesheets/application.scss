@@ -10,58 +10,11 @@
 }
 
 body {
-	/* background-image: image-url('bgrepeat.png'); 
-	background-repeat: repeat;
-	background-size: 100px; */
+
 	background-color: #000;
 	font-family: conthrax;
 }
-.pure-white {
-	background-color: #fff;
-}
-.red {
-	background-color: #DA291c;
-}
-.red-font {
-	color: #DA291c;
-}
-.tan {
-	background-color: #c3c7bf;
-}
-.tan-font {
-	bcolor: #c3c7bf;
-}
 
-.white {
-	background-color: #dbe2e9;
-}
-.white-font {
-	color: #dbe2e9;
-}
-
-.black {
-
-	background-color: #000;
-}
-.black-font {
-
-	color: #000;
-}
-.gray {
-	background-color: #2e2e2e;
-}
-.gray-font {
-	color: #2e2e2e;
-}
-
-.dark-white {
-	
-	background-color: #e0e0e0;
-}
-.dark-white-font {
-
-	color: #e0e0e0;
-}
 .navbar-dark .navbar-nav .nav-link {
 	color: #fff;
 	display: block;
@@ -76,27 +29,6 @@ body {
 	color: #DA291c;
 
 }
-.italic {
-	font-style: italic;
-}
-
-h1.series {
-	font-size: 350%;
-}
-.center {
-	text-align: center;
-	margin: auto;
-}
-.bulk-text {
-	margin-top: 50px;
-	margin-bottom: 50px;
-
-}
-.bulk-padding {
-	
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
 
 .footer-nav {
 	list-style-type: none;
@@ -104,18 +36,7 @@ h1.series {
 	padding: 0px;
 	overflow: hidden;
 }
-.height-spacer {
-	height: 15px;
-}
-.no-space {
 
-	padding: 0px;
-	margin: 0px;
-}
-.woodbg {
-	
-	background-image: image-url('woodbg.jpg');
-}
 a:link {color:#DA291c; text-decoration: none;}      /* unvisited link */
 a:visited {color:#DA291c;  text-decoration: none;}  /* visited link */
 a:hover {color:#004b8d;  text-decoration: none;}  /* mouse over link */
@@ -129,29 +50,6 @@ html,body {
 
 .container, .row {
 	height:100%;
-}
-
-.flex-row, .flex-row > div[class*='col-'] {  
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex:0 auto;
-    height:100%;
-}
-
-.flex-col {
-    display: flex;
-    display: -webkit-flex;
-    flex: 1;
-	flex-flow: column nowrap;
-}
-
-.flex-grow {
-	display: flex;
-    -webkit-flex: 2;
-    flex: 2;
 }
 
 
@@ -177,4 +75,13 @@ a.anchor {
 
 .darkbg {
 	color: #fefefe;
+}
+
+
+.navbar-dark {
+	margin-bottom: 0px;
+}
+
+.fit-image {
+	width: 100%;
 }
