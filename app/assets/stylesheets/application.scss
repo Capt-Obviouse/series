@@ -117,3 +117,10 @@ height: 100%;
   padding: 0px;
   }
 }
+
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+input, textarea { display: block; }

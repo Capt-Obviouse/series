@@ -1,16 +1,13 @@
 Rails.application.routes.draw do
   root to: 'home#index'
 
-resources :home, only: [:index] do
-	collection do
-		post :submit_form
-		get :thanks
-	end
-end
+  Rails.application.routes.draw do
+  	get 'contact-me', to: 'messages#new', as: 'new_message'
+  	post 'contact-me', to: 'messages#create', as: 'create_message'
+  end
 
-  get 'products/index'
-
-	get 'home/index'
+ 
+  get 'home/index'
 
 
 
