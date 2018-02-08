@@ -1,0 +1,105 @@
+.navbar-dark .navbar-nav .nav-link {
+	color: white;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-right: 1px solid black;
+}
+
+.navbar-dark .nav-item.active .nav-link, 
+.navbar-dark .nav-item:hover .nav-link {
+	color: #DA291c;
+
+}
+
+.footer-nav {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+a:link {color:#DA291c; text-decoration: none;}      /* unvisited link */
+a:visited {color:#DA291c;  text-decoration: none;}  /* visited link */
+a:hover {color:#004b8d;  text-decoration: none;}  /* mouse over link */
+a:active {color:#DA291c;  text-decoration: none;}  /* selected link */
+
+
+
+
+
+.container, .row {
+	height:100%;
+}
+
+
+.offwhite {
+ 	border-top: 1px solid rgba(0, 0, 0, 0.5);
+ 	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+
+}
+.white {
+	background-color: #fff;
+}
+.past-home {
+	background-color: black !important;
+}
+
+.center {
+	margin: auto;
+	text-align: center;
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -130px;
+    visibility: hidden;
+}
+.darkbg {
+	color: #fefefe;
+	background-color: black;
+}
+
+
+.navbar-dark {
+	margin-bottom: 0px;
+}
+
+/* Default - screens over 767px wide */
+.fit-image {
+background: image-url('mds2.png');
+background-size: 100%;
+width: 1080px;
+height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Mobile Landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .fit-image {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+
+  }
+}
+
+/* Mobile portrait */
+@media only screen and (max-width: 479px) {
+  .fit-image {
+    width: 100%;
+    height: 100%;
+  margin: 0px;
+  padding: 0px;
+  }
+}
+
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+input, textarea { display: block; }

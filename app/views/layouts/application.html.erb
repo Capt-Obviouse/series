@@ -20,7 +20,7 @@
   <body>
 <!-- NavBar --> 
 		
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark" id='navigation' style='height: 100px;'>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark" id='navigation'>
 		<div class='container-fluid'>
 			<a class="navbar-brand" href="http://www.series-22.com">
 				<%= image_tag('seriesletters.png') %> 
@@ -55,8 +55,8 @@
 			<%= yield %>
 
 
-	
-		<div class='container-fluid darkbg' style='margin-top: 30px;'>
+	<footer>
+		<div class='container-fluid darkbg'>
 			<div class='container'>
 				<div class='row text-white'>
 					<div class='col-sm-4 center'>
@@ -85,34 +85,11 @@
 				</div>
 			</div>
 		</div>
-
+	</footer>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 
-	<script>
-
-		var mainbottom = $('#home').offset().top + $('#home').height();
-
-		mainbottom = mainbottom * (70 / 100);
-
-		// on scroll, 
-		$(window).on('scroll',function(){
-	
-		    // we round here to reduce a little workload
-		    
-		    stop = Math.round($(window).scrollTop());
-		    if (stop > mainbottom) {
-		        $('#navigation').addClass('past-home');
-		        $('#mainNav').addClass('past-home');
-		    } else {
-		        $('#navigation').removeClass('past-home');
-		        $('#mainNav').addClass('past-home');
-		        
-		   }
-
-		});
-	</script>
 
   </body>
 </html>

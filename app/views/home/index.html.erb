@@ -1,250 +1,212 @@
 
-<div class='row container-fluid' id='home'>
-	<div style='margin: auto;'> 
-		<div class='main-text'>
-			One <font color='red'>veteran</font> is too many
-		</div>
-	</div>
+
+<div class='section sectionOne'>
+		<h1>One <span class='mainText'>veteran</span> is too many</h1>
+</div>
+<div class='subSection'>
+		<h1>Each day 22 Veterans commit suicide</h1>		
+</div>
+<div class='section sectionAbout'>
+	<p>
+		To fully understand how SERIES came to be we have to take you back. Back to a Sunday afternoon on Camp Pendleton in a quiet barracks room where one Marine would take his own life.   Back to the cries of our brother as he jumped to his death while we helplessly watched. Back to a silent aircraft hangar where over 100 Marines stood side by side but still one short. Back to a phone call that makes your hair stand on end because another friend was in the hospital and no one knew if he would live because he had lost so much blood at his own hands. We are a company of veterans who are drawing a line in the sand. While SERIES is a for profit company, we are also for change and it's in this that we are heavily invested. We believe that our service to our brothers does not end with our contract and so we carry our motto of Semper Fidelis to SERIES. 
+	</p>
+</div>
+<div class='subSection'>
+	<h1>Our Mission</h1>
+</div>
+<div class='section sectionMission'>
+	Raise national awareness about veteran suicide and to donate money directly to programs that help veterans fight this battle against suicide. We have set a goal to donate 1 million dollars to these programs in what we are calling The Million Dollar Salute.
+</div>
+<div class='subSection'>
+	<h1>Million Dollar Salute</h1>
+</div>
+<div class='section sectionMDS'></div>
+<div class='subSection'>
+	<h1>Partners</h1>
+</div>
+<div class='section sectionPartners'>
+	<a class='active' href='http://www.operationhomefront.org/' target='_blank'> 
+		<%= image_tag('OH_logo.png', :class => 'imgPartners') %> 
+	</a>
+	<a href='http://www.hiddenwounds.org/' target='_blank'>
+		<%= image_tag('hiddenwounds.png', :class => 'imgPartners') %>
+	</a>
+	<a href='https://www.facebook.com/thegreenlightsociety/' target='_blank'>
+		<%= image_tag('greenlight.jpg', :class => 'imgParnters') %> 
+	</a>
+	<a href='https://www.liftforthe22.org/' target='_blank'>
+		<%= image_tag('liftfor22.png', :class => 'imgPartners') %>
+	</a>
+</div>
+<div class='subSection'>
+		<h4>20 percent of every sale contributes to the Million Dollar Salute</h4>
+</div>
+<div class='section sectionProducts'>
+	<p>
+		<div id='collection-component-af12e8c685c' class='container-fluid'></div>
+				<script>
+				/*<![CDATA[*/
+
+				(function () {
+				  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+				  if (window.ShopifyBuy) {
+				    if (window.ShopifyBuy.UI) {
+				      ShopifyBuyInit();
+				    } else {
+				      loadScript();
+				    }
+				  } else {
+				    loadScript();
+				  }
+
+				  function loadScript() {
+				    var script = document.createElement('script');
+				    script.async = true;
+				    script.src = scriptURL;
+				    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+				    script.onload = ShopifyBuyInit;
+				  }
+
+				  function ShopifyBuyInit() {
+				    var client = ShopifyBuy.buildClient({
+				      domain: 'series22.myshopify.com',
+				      apiKey: 'dac21f19e3dbb52e6b15c6cd24554732',
+				      appId: '6',
+				    });
+
+				    ShopifyBuy.UI.onReady(client).then(function (ui) {
+				      ui.createComponent('collection', {
+				        id: 23034888224,
+				        node: document.getElementById('collection-component-af12e8c685c'),
+				        moneyFormat: '%24%7B%7Bamount%7D%7D',
+				        options: {
+				  "product": {
+				    "variantId": "all",
+				    "contents": {
+				      "imgWithCarousel": false,
+				      "variantTitle": false,
+				      "description": false,
+				      "buttonWithQuantity": false,
+				      "quantity": false
+				    },
+				    "styles": {
+				      "product": {
+				        "@media (min-width: 601px)": {
+				          "max-width": "calc(33.33333% - 30px)",
+				          "margin-left": "30px",
+				          "margin-bottom": "50px"
+				        }
+				      },
+				      "button": {
+				        "background-color": "#000000",
+				        ":hover": {
+				          "background-color": "#000000"
+				        },
+				        ":focus": {
+				          "background-color": "#000000"
+				        }
+				      }
+				    }
+				  },
+				  "cart": {
+				    "contents": {
+				      "button": true
+				    },
+				    "styles": {
+				      "button": {
+				        "background-color": "#000000",
+				        ":hover": {
+				          "background-color": "#000000"
+				        },
+				        ":focus": {
+				          "background-color": "#000000"
+				        }
+				      },
+				      "footer": {
+				        "background-color": "#ffffff"
+				      }
+				    }
+				  },
+				  "modalProduct": {
+				    "contents": {
+				      "img": false,
+				      "imgWithCarousel": true,
+				      "variantTitle": false,
+				      "buttonWithQuantity": true,
+				      "button": false,
+				      "quantity": false
+				    },
+				    "styles": {
+				      "product": {
+				        "@media (min-width: 601px)": {
+				          "max-width": "100%",
+				          "margin-left": "0px",
+				          "margin-bottom": "0px"
+				        }
+				      },
+				      "button": {
+				        "background-color": "#000000",
+				        ":hover": {
+				          "background-color": "#000000"
+				        },
+				        ":focus": {
+				          "background-color": "#000000"
+				        }
+				      }
+				    }
+				  },
+				  "toggle": {
+				    "styles": {
+				      "toggle": {
+				        "background-color": "#000000",
+				        ":hover": {
+				          "background-color": "#000000"
+				        },
+				        ":focus": {
+				          "background-color": "#000000"
+				        }
+				      }
+				    }
+				  },
+				  "productSet": {
+				    "styles": {
+				      "products": {
+				        "@media (min-width: 601px)": {
+				          "margin-left": "-30px"
+				        }
+				      }
+				    }
+				  }
+				}
+				      });
+				    });
+				  }
+				})();
+				/*]]>*/
+				</script>
+	</p>
+</div>
+<div class='subSection'>
+	<h1>Contact Us</h1>
+</div>
+<div class='section sectionContact'>
+	Contact Us
+</div>
+<div class='subSection'>
+	<h1>Spread the Message</h1>
+</div>
+<div class='section sectionSocial'>
+	<span class='imageSocial'>
+		<a href='https://twitter.com/SERIES_TEAM' target='_blank'><%= image_tag('twitterlogo.png', :class => 'imageSocial') %></a>
+	</span>
+	<span class='imageSocial'>
+		<a href='https://www.instagram.com/series.team/' target='_blank'><%= image_tag('instagramlogo.png', :class => 'imageSocial') %></a>
+	</span>
+	<span class='imageSocial'>
+		<a href='https://www.facebook.com/SeriesTeam/' target='_blank'>	<%= image_tag('fblogo.png', :class => 'imageSocial') %></a>
+	</span>
 </div>
 
 
-<a class='anchor' id='about'></a>
-
-
-<div class='container-fluid darkbg' style='padding-top: 25px;'>
-	<div class='row'>
-
-		<div class='col-sm-12 center'> 
-			<p>
-				To fully understand how SERIES came to be we have to take you back. Back to a Sunday afternoon on Camp Pendleton in a quiet barracks room where one Marine would take his own life.   Back to the cries of our brother as he jumped to his death while we helplessly watched. Back to a silent aircraft hangar where over 100 Marines stood side by side but still one short. Back to a phone call that makes your hair stand on end because another friend was in the hospital and no one knew if he would live because he had lost so much blood at his own hands. We are a company of veterans who are drawing a line in the sand. While SERIES is a for profit company, we are also for change and it's in this that we are heavily invested. We believe that our service to our brothers does not end with our contract and so we carry our motto of Semper Fidelis to SERIES. 
-			</p>
-		</div>
-	</div>
-</div>
-
-
-
-<!--        PRODUCTS       -->
-<a class='anchor' id='products'></a>
-
-<div class='container-fluid offwhite' style='padding: 25px;'>
-	<div class='row container-fluid center'>
-		<div class='col-sm-12 center'>
-
-			<div id='collection-component-af12e8c685c' class='container-fluid'></div>
-			<script>
-			/*<![CDATA[*/
-
-			(function () {
-			  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-			  if (window.ShopifyBuy) {
-			    if (window.ShopifyBuy.UI) {
-			      ShopifyBuyInit();
-			    } else {
-			      loadScript();
-			    }
-			  } else {
-			    loadScript();
-			  }
-
-			  function loadScript() {
-			    var script = document.createElement('script');
-			    script.async = true;
-			    script.src = scriptURL;
-			    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-			    script.onload = ShopifyBuyInit;
-			  }
-
-			  function ShopifyBuyInit() {
-			    var client = ShopifyBuy.buildClient({
-			      domain: 'series22.myshopify.com',
-			      apiKey: 'dac21f19e3dbb52e6b15c6cd24554732',
-			      appId: '6',
-			    });
-
-			    ShopifyBuy.UI.onReady(client).then(function (ui) {
-			      ui.createComponent('collection', {
-			        id: 23034888224,
-			        node: document.getElementById('collection-component-af12e8c685c'),
-			        moneyFormat: '%24%7B%7Bamount%7D%7D',
-			        options: {
-			  "product": {
-			    "variantId": "all",
-			    "contents": {
-			      "imgWithCarousel": false,
-			      "variantTitle": false,
-			      "description": false,
-			      "buttonWithQuantity": false,
-			      "quantity": false
-			    },
-			    "styles": {
-			      "product": {
-			        "@media (min-width: 601px)": {
-			          "max-width": "calc(33.33333% - 30px)",
-			          "margin-left": "30px",
-			          "margin-bottom": "50px"
-			        }
-			      },
-			      "button": {
-			        "background-color": "#000000",
-			        ":hover": {
-			          "background-color": "#000000"
-			        },
-			        ":focus": {
-			          "background-color": "#000000"
-			        }
-			      }
-			    }
-			  },
-			  "cart": {
-			    "contents": {
-			      "button": true
-			    },
-			    "styles": {
-			      "button": {
-			        "background-color": "#000000",
-			        ":hover": {
-			          "background-color": "#000000"
-			        },
-			        ":focus": {
-			          "background-color": "#000000"
-			        }
-			      },
-			      "footer": {
-			        "background-color": "#ffffff"
-			      }
-			    }
-			  },
-			  "modalProduct": {
-			    "contents": {
-			      "img": false,
-			      "imgWithCarousel": true,
-			      "variantTitle": false,
-			      "buttonWithQuantity": true,
-			      "button": false,
-			      "quantity": false
-			    },
-			    "styles": {
-			      "product": {
-			        "@media (min-width: 601px)": {
-			          "max-width": "100%",
-			          "margin-left": "0px",
-			          "margin-bottom": "0px"
-			        }
-			      },
-			      "button": {
-			        "background-color": "#000000",
-			        ":hover": {
-			          "background-color": "#000000"
-			        },
-			        ":focus": {
-			          "background-color": "#000000"
-			        }
-			      }
-			    }
-			  },
-			  "toggle": {
-			    "styles": {
-			      "toggle": {
-			        "background-color": "#000000",
-			        ":hover": {
-			          "background-color": "#000000"
-			        },
-			        ":focus": {
-			          "background-color": "#000000"
-			        }
-			      }
-			    }
-			  },
-			  "productSet": {
-			    "styles": {
-			      "products": {
-			        "@media (min-width: 601px)": {
-			          "margin-left": "-30px"
-			        }
-			      }
-			    }
-			  }
-			}
-			      });
-			    });
-			  }
-			})();
-			/*]]>*/
-			</script>
-
-
-		</div>
-	</div>
-</div>
-
-
-
-<div class='container-fluid darkbg'>
-	<div class='row center'>
-		<div class='col-sm-12 center' style='height: 25%;'>
-			<%= image_tag('mdsintro.png', class: 'fit-image') %>
-		</div>
-	</div>
-</div>
-
-
-<!--       MILLION DOLLAR SALUTE       -->
-<a class='anchor' id='milliondollar'></a>
-
-
-<div class='row container-fluid offwhite'>
-	<div class='row container-fluid center'>
-		<div class='col-sm-12 center fit-image'> 
-			
-		</div>
-	</div>
-</div>
-
-<div class='container-fluid darkbg'>
-	<div class='row'>
-		<div class='col-sm-12 center' style='height: 50px; padding-top: 15px;'>
-			<a class='anchor' id='partners'></a>
-			<h2>
-				Partners
-			</h2>
-		</div>
-	</div>
-	<div class='row'>
-		<div class='col-sm-12 center' style='height: 25%;'>
-			<a class='active' href='http://www.operationhomefront.org/' target='_blank'> <%= image_tag('OH_logo.png', width: '20%', :style => "margin: 15px;") %> </a>
-			<a href='http://www.hiddenwounds.org/' target='_blank'><%= image_tag('hiddenwounds.png', width: '20%', :style => "margin: 15px;") %></a>
-			<a href='https://www.facebook.com/thegreenlightsociety/' target='_blank'><%= image_tag('greenlight.png', width: '20%', :style => "margin: 15px;") %> </a>
-			<a href='https://www.liftforthe22.org/' target='_blank'><%= image_tag('liftfor22.png', width: '20%', :style => "margin: 15px;") %></a>
-		</div>
-	</div>
-</div>
-
-<!--           Contact Us       -->
-
-<a class='anchor' id='contactus'></a>
-<div class='container-fluid offwhite'>
-	<div class='row container-fluid'>
-		<div class='col-sm-12 center' style='padding-top: 25px;'>
-			<h2>
-				Spread the Message
-			</h2>
-		</div>
-		<div class='col-sm-4 center'>
-			<a href='https://twitter.com/SERIES_TEAM' target='_blank'><%= image_tag('twitterlogo.png', width: '50%', margin: '0px') %></a>
-		</div>
-		<div class='col-sm-4 center'>
-			<a href='https://www.instagram.com/series.team/' target='_blank'><%= image_tag('instagramlogo.jpg', width: '50%', margin: '0px') %></a>
-		</div>
-		<div class='col-sm-4 center'>
-			<a href='https://www.facebook.com/SeriesTeam/' target='_blank'>	<%= image_tag('fblogo.png', width: '30%',  margin: '0px') %></a>
-		</div>
-
-				<div class='col-sm-12 center' style='padding-top: 25px;'>
-				<h1>#SERIES22</h1>
-			</div>
-			
-		</div>
-	</div>
 
 

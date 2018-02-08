@@ -1,0 +1,56 @@
+
+/* Default - screens over 767px wide */
+
+div.row {
+	overflow: hidden;
+}
+/* Mobile Landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+div.row {
+	overflow: visible;
+}
+
+}
+
+/* Mobile portrait */
+@media only screen and (max-width: 479px) {
+
+div.row {
+	overflow: visible;
+}
+}
+
+.user-form {
+	> div {
+		display: block;
+		margin: 1em 0;
+	}
+}
+
+.field_with_errors {
+	input, textarea {
+		border: 1px solid #ef4f4f;
+	}
+}
+
+.honeypot {
+	display: none !important;
+}
+
+.main-text 
+{
+	
+	text-align: center; 
+	margin: auto; 
+	font-family: conthrax;
+	color: white;
+	font-weight: 100;
+
+	@media screen and (min-width: 750px) {
+		letter-spacing: 35px;
+		font-size: 150%;
+	}
+
+}
+

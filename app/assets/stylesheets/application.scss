@@ -4,19 +4,49 @@
 
 @import "**/*";
 
-@font-face {
+@font-face 
+{
 	font-family: 'conthrax';
 	src:font-url('conthrax.ttf') format("truetype");
 }
 
-body {
-
-	background-color: #000;
-	font-family: conthrax;
+* 
+{
+	margin: 0;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-	color: #fff;
+/**************** General ****************/
+
+html, body 
+{
+	height: 100%;
+	font-family: conthrax, Arial, sans-serif;
+	background-color: #fffff0;
+	color: black;
+
+}
+
+h1, h2, h3, h4, h5, h6, p 
+{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+/**************** NavBar ****************/
+
+nav 
+{
+	position: fixed;
+	width: 100%;
+	height: 55px;
+	background-color: rgba(0,0,0, 1);
+	z-index: 99;
+}
+
+.navbar-dark .navbar-nav .nav-link 
+{
+	color: white;
+	background-color: black;
 	display: block;
 	text-align: center;
 	padding: 14px 16px;
@@ -24,103 +54,126 @@ body {
 	border-right: 1px solid black;
 }
 
-.navbar-dark .nav-item.active .nav-link, 
-.navbar-dark .nav-item:hover .nav-link {
-	color: #DA291c;
+/**************** Parent Sections ****************/
+
+.section 
+{
+	height: 100%;
+	background-position: center bottom;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: black;
+	padding: 0;
+	margin: 0;
+	padding-top: 10%;
 
 }
 
-.footer-nav {
-	list-style-type: none;
+.subSection 
+{
+	height: 10%;
+	background-color: black;
+	color: white;
+	width: 100%;
+	padding: 0;
+	padding-top: 10px;
+	margin: 0;
+	text-align: center;
+}
+.section, .subSection > h1, h2, h3, h4, h5, h6, p {
 	margin: 0px;
-	padding: 0px;
-	overflow: hidden;
+}
+/**************** Splash Screen ****************/
+
+.sectionOne 
+{
+	background-image: image-url('flagraise.png');
 }
 
-a:link {color:#DA291c; text-decoration: none;}      /* unvisited link */
-a:visited {color:#DA291c;  text-decoration: none;}  /* visited link */
-a:hover {color:#004b8d;  text-decoration: none;}  /* mouse over link */
-a:active {color:#DA291c;  text-decoration: none;}  /* selected link */
-
-
-
-html,body {
-	height:100%;
+.sectionOne > h1 
+{
+	 display: inline-block;
+	 vertical-align: bottom;
+	 text-align: center;
+	 float: none;
+	 margin-top: 35%;
+	 margin-bottom: 35%; 
 }
 
-.container, .row {
-	height:100%;
+.mainText 
+{
+	color: red;
 }
 
+/**************** About Us Section ****************/
 
-.offwhite {
-	background-color: #111111;
-}
-.white {
-	background-color: #fff;
-}
-.past-home {
-	background-color: black !important;
+.sectionAbout 
+{
+	background-image: image-url('mds2.png');
 }
 
-.center {
-	margin: auto;
+/**************** Million Dollar Salute Section ****************/
+
+.sectionMDS 
+{
+	background-image: image-url('mds2.png');
+}
+
+/**************** Mission Section ****************/
+
+.sectionMission 
+{
+	background-size: cover;
+	background-image: image-url('flagraise.png');
+}
+
+/**************** Partners Section ****************/
+
+.sectionPartners 
+{
+	background-size: cover;
+	background-image: image-url('flagraise.png');
+	width: 100%;
+}
+
+.imgPartners 
+{
+	width: 20%;
+	height: auto;
+	align: center;
+	text-align: center;
+	margin: 15px;
+}
+
+/**************** Contact Section ****************/
+
+.sectionContact 
+{
+	background-image: image-url('flagraise.png');
+}
+
+/**************** Social Section ****************/
+
+.sectionSocial 
+{
+	background-image: image-url('mds2.png');	
 	text-align: center;
 }
 
-a.anchor {
-    display: block;
-    position: relative;
-    top: -130px;
-    visibility: hidden;
+.imageSocial  /* Controls the scaling for social media icons */
+{
+	max-width: 33%;
+	height: auto;
+	align: center;
+	padding: 25px;
 }
 
-.darkbg {
-	color: #fefefe;
+/**************** Footer ****************/
+
+footer 
+{
+	background-color: black;
+
 }
 
-
-.navbar-dark {
-	margin-bottom: 0px;
-}
-
-
-
-
-/* Default - screens over 767px wide */
-.fit-image {
-background: image-url('mds2.png');
-background-size: 100%;
-width: 1080px;
-height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* Mobile Landscape */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fit-image {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-
-  }
-}
-
-/* Mobile portrait */
-@media only screen and (max-width: 479px) {
-  .fit-image {
-    width: 100%;
-    height: 100%;
-  margin: 0px;
-  padding: 0px;
-  }
-}
-
-/*
- *= require_tree .
- *= require_self
- */
-
-input, textarea { display: block; }
