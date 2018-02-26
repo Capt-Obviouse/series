@@ -4,20 +4,20 @@
 
 @import "**/*";
 
-@font-face 
+@font-face
 {
 	font-family: 'conthrax';
 	src:font-url('conthrax.ttf') format("truetype");
 }
 
-* 
+*
 {
 	margin: 0;
 }
 
 /**************** General ****************/
 
-html, body 
+html, body
 {
 	height: 100%;
 	font-family: conthrax, Arial, sans-serif;
@@ -26,7 +26,7 @@ html, body
 
 }
 
-h1, h2, h3, h4, h5, h6, p 
+h1, h2, h3, h4, h5, h6, p
 {
 	margin-bottom: 10px;
 	margin-top: 10px;
@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6, p
 
 /**************** NavBar ****************/
 
-nav 
+nav
 {
 	position: fixed;
 	width: 100%;
@@ -43,7 +43,7 @@ nav
 	z-index: 99;
 }
 
-.navbar-dark .navbar-nav .nav-link 
+.navbar-dark .navbar-nav .nav-link
 {
 	color: white;
 	background-color: black;
@@ -56,7 +56,7 @@ nav
 
 /**************** Parent Sections ****************/
 
-.section 
+.section
 {
 	height: 100%;
 	background-position: center bottom;
@@ -67,10 +67,11 @@ nav
 	padding: 0;
 	margin: 0;
 	padding-top: 10%;
+	padding: 10% 10% 0% 10%;
 
 }
 
-.subSection 
+.subSection
 {
 	height: 10%;
 	background-color: black;
@@ -86,43 +87,42 @@ nav
 }
 /**************** Splash Screen ****************/
 
-.sectionOne 
+.sectionOne
 {
 	background-image: image-url('flagraise.png');
 }
 
-.sectionOne > h1 
+.sectionOne > h1
 {
 	 display: inline-block;
 	 vertical-align: bottom;
 	 text-align: center;
 	 float: none;
 	 margin-top: 35%;
-	 margin-bottom: 35%; 
+	 margin-bottom: 35%;
 }
 
-.mainText 
+.mainText
 {
 	color: red;
 }
 
 /**************** About Us Section ****************/
 
-.sectionAbout 
+.sectionAbout
 {
-	background-image: image-url('mds2.png');
 }
 
 /**************** Million Dollar Salute Section ****************/
 
-.sectionMDS 
+.sectionMDS
 {
 	background-image: image-url('mds2.png');
 }
 
 /**************** Mission Section ****************/
 
-.sectionMission 
+.sectionMission
 {
 	background-size: cover;
 	background-image: image-url('flagraise.png');
@@ -130,14 +130,14 @@ nav
 
 /**************** Partners Section ****************/
 
-.sectionPartners 
+.sectionPartners
 {
 	background-size: cover;
 	background-image: image-url('flagraise.png');
 	width: 100%;
 }
 
-.imgPartners 
+.imgPartners
 {
 	width: 20%;
 	height: auto;
@@ -148,16 +148,16 @@ nav
 
 /**************** Contact Section ****************/
 
-.sectionContact 
+.sectionContact
 {
 	background-image: image-url('flagraise.png');
 }
 
 /**************** Social Section ****************/
 
-.sectionSocial 
+.sectionSocial
 {
-	background-image: image-url('mds2.png');	
+	background-image: image-url('mds2.png');
 	text-align: center;
 }
 
@@ -171,9 +171,8 @@ nav
 
 /**************** Footer ****************/
 
-footer 
+footer
 {
 	background-color: black;
 
 }
-
