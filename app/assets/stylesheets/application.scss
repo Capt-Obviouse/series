@@ -21,7 +21,7 @@ html, body
 {
 	height: 100%;
 	font-family: conthrax, Arial, sans-serif;
-	background-color: #fffff0;
+	background-color: #ffffff;
 	color: black;
 
 }
@@ -157,13 +157,12 @@ nav
 
 .sectionSocial
 {
-	background-image: image-url('mds2.png');
 	text-align: center;
 }
 
 .imageSocial  /* Controls the scaling for social media icons */
 {
-	max-width: 33%;
+	width: 23%;
 	height: auto;
 	align: center;
 	padding: 25px;
